@@ -26,6 +26,13 @@ A modern, animated Android application for calculating Body Mass Index (BMI) wit
 | 25.0 - 39.9 | Overweight | Orange |
 | ≥ 40.0 | Obese | Red |
 
+## 📱 UI of the App
+
+<video width="100%" autoplay muted loop controls>
+  <source src="media/main.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## 🛠️ Technical Stack
 
 - **Language**: Java
@@ -115,10 +122,6 @@ dependencies {
     implementation 'com.airbnb.android:lottie:6.4.0'
 }
 ```
-
-## 📱 Screenshots
-
-*[Screenshots would be added here showing the splash screen, main interface, and BMI calculation results]*
 
 ## 🚀 Usage
 
