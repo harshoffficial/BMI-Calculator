@@ -27,7 +27,6 @@ A modern, animated Android application for calculating Body Mass Index (BMI) wit
 | ≥ 40.0 | Obese | Red |
 
 ## 📱 UI of the App
-https://github.com/harshoffficial/BMI-Calculator/issues/1#issue-3271445429
 https://github.com/user-attachments/assets/8fbeb15a-8db8-487a-8002-997851bb10ad
 
 ## 🛠️ Technical Stack
