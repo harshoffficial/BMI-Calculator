@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/primary">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="511dp"
+        android:layout_height="719dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/back" />
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView2"
+        android:layout_width="549dp"
+        android:layout_height="482dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="560dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/back" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView3"
+        android:layout_width="567dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="612dp"
+        android:layout_marginEnd="108dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/back" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView4"
+        android:layout_width="567dp"
+        android:layout_height="310dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="584dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/back" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:gravity="center"
+        android:text="BMI"
+        android:textColor="#ABA4C7"
+        android:textSize="55dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/lottieAnimationView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lottieAnimationView"
+        app:layout_constraintVertical_bias="0.625" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView5"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginBottom="488dp"
+        android:alpha="0.8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/mark" />
+
+
+    <TableLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:padding="16dp"
+        android:stretchColumns="1"
+        android:alpha="0.8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.935">
+
+        <TableRow android:background="@drawable/table_background"> <!-- Light Yellow -->
+            <TextView
+                android:layout_margin="8dp"
+                android:text="≤ 18.4"
+                android:textStyle="bold"
+                android:textColor="#655D6D"/>
+
+            <TextView
+                android:layout_margin="8dp"
+                android:text="Underweight"
+                android:textColor="#655D6D"/>
+        </TableRow>
+
+        <TableRow android:background="#A5D6A7"> <!-- Green -->
+            <TextView
+                android:layout_margin="8dp"
+                android:text="18.5 - 24.9"
+                android:textStyle="bold"
+                android:textColor="#655D6D"/>
+
+            <TextView
+                android:layout_margin="8dp"
+                android:text="Normal"
+                android:textColor="#655D6D"/>
+        </TableRow>
+
+        <TableRow android:background="#FFCC80"> <!-- Orange -->
+            <TextView
+                android:layout_margin="8dp"
+                android:text="25.0 - 39.9"
+                android:textStyle="bold"
+                android:textColor="#655D6D"/>
+
+            <TextView
+                android:layout_margin="8dp"
+                android:text="Overweight"
+                android:textColor="#655D6D"/>
+        </TableRow>
+
+        <TableRow android:background="@drawable/table_background2"> <!-- Red -->
+            <TextView
+                android:layout_margin="8dp"
+                android:text="≥ 40.0"
+                android:textStyle="bold"
+                android:textColor="#655D6D"/>
+
+            <TextView
+                android:layout_margin="8dp"
+                android:text="Obese"
+                android:textColor="#655D6D"/>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView5"
+        app:layout_constraintVertical_bias="0.034">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+          <EditText
+            android:id="@+id/weight"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:background="@drawable/operation_background"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Your Weight"
+            android:inputType="text"
+            android:textColor="#C5C1D9"
+            android:textColorHint="#C0BACA"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/weight_unit_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:alpha="0.8"
+                android:background="@drawable/operation_background"
+                android:popupBackground="@drawable/spinner_item_background"
+                android:spinnerMode="dropdown"
+                android:entries="@array/weight_units"
+                app:layout_constraintTop_toBottomOf="@+id/weight" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:alpha="0.8"
+            android:background="@drawable/operation_background"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter Your Height"
+            android:inputType="text"
+            android:textColor="#C5C1D9"
+            android:textColorHint="#C0BACA"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/height_unit_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:alpha="0.8"
+                android:background="@drawable/operation_background"
+                android:popupBackground="@drawable/spinner_item_background"
+                android:spinnerMode="dropdown"
+                android:entries="@array/height_units"
+                app:layout_constraintTop_toBottomOf="@+id/height" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="139dp"
+            android:layout_height="55dp"
+            android:background="@drawable/button_background"
+            android:gravity="center"
+            android:text="BMI"
+            android:textColor="#C1B0E2"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bmi"
+            android:layout_width="139dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#C1B0E2"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"
+
+            android:textStyle="bold"
+
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

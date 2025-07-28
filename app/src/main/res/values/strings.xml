@@ -1,0 +1,15 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">BMI</string>
+
+    <string-array name="height_units">
+        <item>cm</item>
+        <item>feet</item>
+        <item>meters</item>
+    </string-array>
+
+    <string-array name="weight_units">
+        <item>kg</item>
+        <item>ponds</item>
+        <item>stones(+lb)</item>
+    </string-array>
+</resources>
