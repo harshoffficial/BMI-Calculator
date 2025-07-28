@@ -32,6 +32,7 @@ A modern, animated Android application for calculating Body Mass Index (BMI) wit
   <source src="media/main.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+https://github.com/user-attachments/assets/8fbeb15a-8db8-487a-8002-997851bb10ad
 
 ## 🛠️ Technical Stack
 
